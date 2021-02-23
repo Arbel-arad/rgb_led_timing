@@ -1,0 +1,436 @@
+int RedPin = 9;        
+int GreenPin = 10;        
+int BluePin = 11;       
+        
+        
+void setup()        
+{       
+  pinMode(RedPin, OUTPUT);        
+  pinMode(GreenPin, OUTPUT);        
+  pinMode(BluePin, OUTPUT);       
+}       
+        
+void loop()       
+{       
+SetRGB (0,1,1);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,5,7);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,8,10);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,11,14);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,14,18);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,17,23);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,21,27);       
+  delay(100); // Wait for 2000 millisecond(s)       
+SetRGB (0,24,31);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,27,36);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,29,38);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,32,41);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,36,46);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,40,50);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,48,60);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (3,62,75);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (4,67,82);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (7,75,92);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (8,79,97);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (9,80,98);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (10,84,102);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (11,85,104);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (12,88,107);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (13,90,110);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,255,255);       
+  delay(250); // Wait for 2000 millisecond(s)        
+SetRGB (17,96,115);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,255,255);       
+  delay(250); // Wait for 2000 millisecond(s)        
+SetRGB (23,105,125);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,255,255);       
+  delay(250); // Wait for 2000 millisecond(s)         
+SetRGB (27,111,132);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (30,115,137);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (33,11,139);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (38,122,144);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (40,125,146);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (44,131,152);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (49,136,158);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (51,139,161);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (53,140,165);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (60,146,168);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (63,149,171);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (67,152,174);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (71,156,178);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (73,158,179);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (76,161,182);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (79,164,185);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (82,167,188);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (87,170,193);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (90,172,192);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (96,176,196);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (101,179,199);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (109,186,205);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (113,189,208);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (117,192,219);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (124,197,215);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (132,200,218);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (139,205,222);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (143,207,223);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (146,209,225);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (153,213,228);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (159,218,232);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (166,220,233);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (169,222,235);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (173,223,236);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (177,225,238);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (182,228,239);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (189,231,242);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (195,233,243);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (198,235,245);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (201,236,245);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (204,236,245);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (207,237,245);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (209,238,245);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (212,238,245);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (217,239,245);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (220,240,245);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (222,240,245);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (223,240,245);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (234,242,250);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (238,242,252);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (240,244,253);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (245,246,255);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (249,251,255);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (250,253,255);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,255,255);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,255,255);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,251,233);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,244,206);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,241,195);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,241,191);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,236,171);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,231,151);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,228,137);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,224,118);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,220,102);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,215,80);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,209,54);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,204,34);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,201,18);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,199,10);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,198,6);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,189,6);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,181,6);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,176,6);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,173,6);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,170,6);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,167,6);       
+SetRGB (255,165,6);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,163,6);       
+SetRGB (255,170,6);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,161,6);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (245,157,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (243,155,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (240,154,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (237,152,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (233,150,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (230,148,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (228,146,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (229,147,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (229,117,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (229,114,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (229,110,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (229,110,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (229,110,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (229,110,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (229,110,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (229,106,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (229,101,5);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (229,95,5);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (229,89,5);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (224,87,5);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (220,84,4);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (217,83,4);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (213,80,4);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (209,79,3);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (202,76,3);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (196,74,3);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (189,71,3);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (189,71,3);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (189,71,3);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (189,71,3);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (189,71,3);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (189,71,3);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (189,71,3);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (182,69,3);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (181,67,2);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (175,65,2);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (166,63,2);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (159,60,2);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (152,57,2);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (146,54,1);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (138,51,1);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (138,51,1);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (138,51,1);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (138,51,1);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (138,51,1);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (138,51,1);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (138,51,1);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (132,49,1);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (124,46,1);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (119,44,1);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (110,41,1);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (105,39,1);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (98,36,1);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (94,35,1);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (84,31,0);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (74,27,0);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (68,26,0);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (65,24,0);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (60,22,0);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (53,19,0);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (47,17,0);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (43,16,0);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (38,14,0);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (37,13,0);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (34,12,0);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (30,11,0);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (25,10,0);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (20,10,0);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (17,9,0);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (15,8,0);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (12,7,0);        
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,198,6);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,189,6);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,181,6);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,176,6);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,173,6);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,173,6);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,173,6);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (217,239,245);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (212,238,245);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (190,238,245);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (170,200,200);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (150,150,245);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (130,110,110);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (75,98,107);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (11,85,104);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,65,72);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,48,60);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,40,50);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (10,34,72);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,255,255);       
+  delay(250); // Wait for 2000 millisecond(s)        
+SetRGB (0,29,38);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,27,36);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (255,255,255);       
+  delay(250); // Wait for 2000 millisecond(s)        
+SetRGB (0,21,27);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,17,23);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,14,18);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,11,14);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+SetRGB (0,1,1);       
+  delay(2000); // Wait for 2000 millisecond(s)        
+        
+}       
+        
+void SetRGB(int R, int G, int B){       
+  analogWrite(RedPin, R);       
+  analogWrite(GreenPin, G);       
+  analogWrite(BluePin, B);        
+}       
