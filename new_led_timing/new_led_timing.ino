@@ -1,8 +1,7 @@
 #include <DueTimer.h>
 #include <Adafruit_NeoPixel.h>
-
 uint8_t row = 0;
-const uint8_t sun = 5, D1 = 1, D2 = 2, D3 = 3, D4 = 4, D5 = 6, D6 = 7, D7 = 8, D8 = 9, D9 = 10, D10 = 11;   //led pin numbers
+const uint8_t sun = 5, D1 = 1, D2 = 2, D3 = 3, D4 = 4,    D5 = 6, D6 = 7, D7 = 8, D8 = 9, D9 = 10, D10 = 11;   //led pin numbers
 struct leds{
   uint8_t color_temp;   //x100 for real temp
   bool D1;              //other monochrome leds
@@ -255,8 +254,10 @@ uint8_t Rnext = 0;
 uint8_t Gnext = 0;
 uint8_t Bnext = 0;
 
-void displayNext()
-{
+void displayNext(){
+    analogWrite(DAC0,2000);//debug only
+
+  for (int time = 0; time < color_chart[pos][3]; time++){
   R = color_chart[pos][0];
   G = color_chart[pos][1];
   B = color_chart[pos][2];
@@ -274,29 +275,28 @@ void displayNext()
   Bnext = map(Bnext, 0, 255, 0, brightness);
 
   pos--;
-
-  for (int time = 0; time < color_chart[pos][3]; time++){
     for (int i = 0; i < 240; i++){
-      pixels.setPixelColor(i, pixels.Color(R, G, B));
-    }
+      pixels.setPixelColor(i, pixels.Color(R, G, B));}
     R = map(time, 0, color_chart[pos][3], R, Rnext);
     G = map(time, 0, color_chart[pos][3], G, Gnext);
     B = map(time, 0, color_chart[pos][3], B, Bnext);
     pixels.show();
+        analogWrite(DAC0,4000);//debug only
     delay(60);
-  }
+  }   
+  pos++;
+      analogWrite(DAC0,0);//debug only
 }
 
 void next_row(){
   row++;
   if(row >=13){
-    row = 0;
-  }
+    row = 0;}
   digitalWrite(D1, data_list[row].D1);
   digitalWrite(D2, data_list[row].D2);
   digitalWrite(D3, data_list[row].D3);
   digitalWrite(D4, data_list[row].D4);
-  digitalWrite(D5, data_list[row].D5);
+  digitalWrite(D5, da ta_list[row].D5);
   digitalWrite(D6, data_list[row].D6);
   digitalWrite(D7, data_list[row].D7);
   digitalWrite(D8, data_list[row].D8);
@@ -305,6 +305,7 @@ void next_row(){
 }
 
 void setup(){
+  analogWriteResolution(12);//debug
   pinMode(sun, OUTPUT);
   pinMode(D1, OUTPUT);
   pinMode(D2, OUTPUT);
@@ -317,15 +318,12 @@ void setup(){
   pinMode(D9, OUTPUT);
   pinMode(D10, OUTPUT);
 
-  delay(2500);
   pixels.begin();
   pixels.clear();
-  
 	Timer0.attachInterrupt(next_row);
-	//Timer0.start(30000000);   //30S timer interrupt
-  Timer0.start(100000);   //3S timer interrupt
+	Timer0.start(30000000);   //30S timer interrupt
+  //Timer0.start(1000000);   //1S timer interrupt
 }
-
 void loop(){
   displayNext();
   if (pos == 208){
