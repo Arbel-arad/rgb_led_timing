@@ -292,7 +292,7 @@ void setup(){
   pixels.begin();
   pixels.clear();
 	Timer0.attachInterrupt(next_row);
-	Timer0.start(30000000);   //30S timer interrupt
+	Timer0.start(138461538);   //30S timer interrupt
  
   Timer1.attachInterrupt(displayNext);
   Timer1.start(432692);   //new time for ~30mins run time "432692" -----0.5S timer interrupt (500000)-----
